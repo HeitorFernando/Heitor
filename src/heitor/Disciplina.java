@@ -12,10 +12,10 @@ package heitor;
 public class Disciplina {
     private String descricao;
     private String sigla;
-    private String periodo;
+    private int periodo;
     private int quantidadeDeCreditos;
 
-    public Disciplina(String descricao, String sigla, String periodo, int quantidadeDeCreditos) {
+    public Disciplina(String descricao, String sigla, int periodo, int quantidadeDeCreditos) {
         this.descricao = descricao;
         this.sigla = sigla;
         this.periodo = periodo;
@@ -38,11 +38,11 @@ public class Disciplina {
         this.sigla = sigla;
     }
 
-    public String getPeriodo() {
+    public int getPeriodo() {
         return periodo;
     }
 
-    public void setPeriodo(String periodo) {
+    public void setPeriodo(int periodo) {
         this.periodo = periodo;
     }
 
