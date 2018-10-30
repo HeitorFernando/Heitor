@@ -1,7 +1,7 @@
 public class Fachada {
   private static Fachada instance= null
   private Fachada(){
-    public static void getInstance(){
+    public static  getInstance(){
       if (instance== null){
         this.instance=new Fachada();
       }
