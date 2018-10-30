@@ -13,10 +13,20 @@ package heitor;
 public class Turma {
     private String identificador;
     private String anoDeOferta;
+    private GradeDeHorarios gradeDeHorarios;
 
-    public Turma(String identificador, String anoDeOferta) {
+    public Turma(String identificador, String anoDeOferta,GradeDeHorarios gradeDeHorarios) {
         this.identificador = identificador;
         this.anoDeOferta = anoDeOferta;
+        this.gradeDeHorarios = gradeDeHorarios;
+    }
+
+    public GradeDeHorarios getGradeDeHorarios() {
+        return gradeDeHorarios;
+    }
+
+    public void setGradeDeHorarios(GradeDeHorarios gradeDeHorarios) {
+        this.gradeDeHorarios = gradeDeHorarios;
     }
 
     public String getIdentificador() {
