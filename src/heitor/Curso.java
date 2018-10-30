@@ -23,19 +23,19 @@ public class Curso {
     //conjunto de Turmas
     private List<Turma> turmas;
 
-    public Curso(int cod_Curso, String descricao, int duracao, List professores, List disciplinas, List turmas) {
+    public Curso(int cod_Curso, String descricao, int duracao, List disciplinas, List professores, List turmas) {
         this.cod_Curso = cod_Curso;
         this.descricao = descricao;
         this.duracao = duracao;
-        this.professores = professores;
         this.disciplinas = disciplinas;
+        this.professores = professores;
         this.turmas = turmas;
         
     }
     public Curso(String descricao) {
         this.descricao = descricao;
-        this.professores = new ArrayList();
         this.disciplinas = new ArrayList();
+        this.professores = new ArrayList();
         this.turmas = new ArrayList();
     }
 
