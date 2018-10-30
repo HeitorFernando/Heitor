@@ -48,7 +48,7 @@ public class Horario {
 
     @Override
     public String toString() {
-        return "Horario{" + "disciplina=" + disciplina + ", professor=" + professor + ", laboratorio=" + laboratorio + '}';
+        return "Horario{" + "disciplina=" + disciplina.getDescricao + ", professor=" + professor.getNome + ", laboratorio=" + laboratorio.getDescricao + '}';
     }
     
 }
